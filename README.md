@@ -16,3 +16,11 @@ Aplicación web en Next.js que visualiza indicadores económicos del Banco Centr
 ## 🔑 Credenciales
 
 Obtén credenciales en [Banco Central de Chile](https://www.bcentral.cl/) para acceder a la API.
+
+## Versión en vivo
+
+Puedes acceder a la versión en vivo de la aplicación en:
+
+🔗 [https://api-bcch.vercel.app/](https://api-bcch.vercel.app/)
+
+![Indicadores Económicos BCCH](indicadores.png)
