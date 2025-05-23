@@ -38,7 +38,7 @@ export default function Footer() {
             <p className="text-sm text-muted-foreground">Francisco Yuster</p>
             <div className="flex space-x-4">
               <Link
-                href="https://www.linkedin.com/in/francisco-yuste"
+                href="https://www.linkedin.com/in/francisco-yuster-aa0b06258/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground"
@@ -47,7 +47,7 @@ export default function Footer() {
                 <span className="sr-only">LinkedIn</span>
               </Link>
               <Link
-                href="https://github.com/franciscoyuste"
+                href="https://github.com/franciscoyuster"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground"
