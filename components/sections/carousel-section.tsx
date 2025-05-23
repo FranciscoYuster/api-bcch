@@ -22,7 +22,7 @@ export default function CarouselSection({ title }: CarouselSectionProps) {
 
   return (
     <section className="bg-background">
-      <h2 className="text-2xl font-semibold mb-4">{title}</h2>
+      <h2 className="text-2xl font-semibold px-5 mb-4">{title}</h2>
       {isLoading ? (
         <div className="flex justify-center items-center py-8">
           <Loader2 className="h-8 w-8 text-primary animate-spin" />
