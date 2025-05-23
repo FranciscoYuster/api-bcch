@@ -23,4 +23,4 @@ Puedes acceder a la versión en vivo de la aplicación en:
 
 🔗 [https://api-bcch.vercel.app/](https://api-bcch.vercel.app/)
 
-![Indicadores Económicos BCCH](indicadores.png)
+![Indicadores Económicos BCCH](/public/indicadores.png)
