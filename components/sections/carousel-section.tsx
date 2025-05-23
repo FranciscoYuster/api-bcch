@@ -6,7 +6,7 @@ interface CarouselSectionProps {
 
 export default function CarouselSection({ title }: CarouselSectionProps) {
   return (
-    <section className="w-screen px-6 py-4">
+    <section className="w-screen">
       
       <h2 className="text-2xl font-semibold mb-4 px-5">{title}</h2>
       <IndicatorsCarousel />
