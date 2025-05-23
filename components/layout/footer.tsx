@@ -35,7 +35,7 @@ export default function Footer() {
 
           <div className="space-y-3">
             <h3 className="font-semibold">Desarrollado por</h3>
-            <p className="text-sm text-muted-foreground">Francisco Yuste</p>
+            <p className="text-sm text-muted-foreground">Francisco Yuster</p>
             <div className="flex space-x-4">
               <Link
                 href="https://www.linkedin.com/in/francisco-yuste"
