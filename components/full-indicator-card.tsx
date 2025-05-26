@@ -97,7 +97,7 @@ export default function FullIndicatorCard({ indicatorId, title, description }: F
     // Determinar si los datos son mensuales o de otra frecuencia
     const isPIB = indicatorId.includes("PIB")
 
-    // Para el PIB, mostrar trimestres
+    // Para el PIB, mostrar trimestres con el año completo
     if (isPIB) {
       return {
         labels: sortedForChart.map((item) => {
@@ -117,9 +117,9 @@ export default function FullIndicatorCard({ indicatorId, title, description }: F
       }
     }
 
-    // Para otros indicadores, mostrar meses
+    // Para otros indicadores, mostrar meses y año
     return {
-      labels: sortedForChart.map((item) => format(new Date(item.fecha), "MMM", { locale: es })),
+      labels: sortedForChart.map((item) => format(new Date(item.fecha), "MMM yyyy", { locale: es })),
       datasets: [
         {
           label: title,
@@ -259,9 +259,18 @@ export default function FullIndicatorCard({ indicatorId, title, description }: F
     scales: {
       x: {
         type: "category" as const,
+        griid: {
+          display: false,
+        },
+        ticks: {
+          maxRotation: 45, // etiquetas más largas
+          autoSkip: true,
+          maxTicksLimit: 8,
+        }
       },
       y: {
         type: "linear" as const,
+        beginAtZero: false,
         ticks: {
           callback: (value: any) =>
             new Intl.NumberFormat("es-CL", {
